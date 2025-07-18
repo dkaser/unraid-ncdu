@@ -3,6 +3,6 @@
     "package_name": "unraid-ncdu",
     "author": "Derek Kaser",
     "min": "7.0.0",
-    "icon": "hard-drive",
+    "icon": "fa-hard-drive",
     "support": "https://forums.unraid.net/"
 }
