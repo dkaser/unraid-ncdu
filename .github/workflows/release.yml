@@ -1,11 +1,14 @@
 on:
   release:
     types:
-      - created
+      - prereleased
+      - released
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: dkaser/unraid-plugin-release-action@v1
         with:
