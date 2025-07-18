@@ -1,9 +1,9 @@
                       |-----handy-ruler------------------------------------------------------|
-unraid-plugin-template: unraid-plugin-template
+unraid-plugin-template: unraid-ncdu
 unraid-plugin-template:
-unraid-plugin-template: Sample slack-desc file
+unraid-plugin-template: A disk usage analyzer with a text-mode user interface.
 unraid-plugin-template: 
-unraid-plugin-template: 
+unraid-plugin-template: Built from https://dev.yorhel.nl/ncdu
 unraid-plugin-template:
-unraid-plugin-template: https://github.com/dkaser/unraid-plugin-template
+unraid-plugin-template: https://github.com/dkaser/unraid-ncdu
 unraid-plugin-template:
