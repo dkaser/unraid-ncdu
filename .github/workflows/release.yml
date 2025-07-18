@@ -1,0 +1,15 @@
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dkaser/unraid-plugin-release-action@v1
+        with:
+          plugin_version: ${{ github.event.release.name }}
+          plugin_changelog: ${{ github.event.release.body }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          upload_url: ${{ github.event.release.upload_url }}
