@@ -4,7 +4,7 @@
 <PLUGIN 
   name="ncdu"
   author="Derek Kaser"
-  version="0.0.2"
+  version="0.0.3"
   
   pluginURL="https://raw.githubusercontent.com/dkaser/unraid-ncdu/main/plugin/ncdu.plg"
   support="https://forums.unraid.net/"
@@ -16,6 +16,10 @@
 <CHANGES>
 <![CDATA[
 
+### 0.0.3
+
+Test release
+
 ### 0.0.2
 
 Test Release
@@ -25,9 +29,9 @@ For older releases, see https://github.com/dkaser/unraid-ncdu/releases
 ]]>
 </CHANGES>
 
-<FILE Name="/boot/config/plugins/ncdu/unraid-ncdu-0.0.2-noarch-1.txz">
-<URL>https://github.com/dkaser/unraid-ncdu/releases/download/0.0.2/unraid-ncdu-0.0.2-noarch-1.txz</URL>
-<SHA256>f4800a75e772aaa95f854bf661b5f651e030b6272b1ffb6490da565dd751fe26</SHA256>
+<FILE Name="/boot/config/plugins/ncdu/unraid-ncdu-0.0.3-noarch-1.txz">
+<URL>https://github.com/dkaser/unraid-ncdu/releases/download/0.0.3/unraid-ncdu-0.0.3-noarch-1.txz</URL>
+<SHA256>f165201b47049c31718d4291eab4deb05b123cb74207dffe4175eeca4f5e74c5</SHA256>
 </FILE>
 
 <!--
@@ -36,15 +40,15 @@ The 'install' script.
 <FILE Run="/bin/bash">
 <INLINE>
 <![CDATA[
-upgradepkg --install-new /boot/config/plugins/ncdu/unraid-ncdu-0.0.2-noarch-1.txz
+upgradepkg --install-new /boot/config/plugins/ncdu/unraid-ncdu-0.0.3-noarch-1.txz
 
 # cleanup old versions
-rm -f $(ls /boot/config/plugins/ncdu/unraid-ncdu-*.txz 2>/dev/null | grep -v '0.0.2')
+rm -f $(ls /boot/config/plugins/ncdu/unraid-ncdu-*.txz 2>/dev/null | grep -v '0.0.3')
 
 echo ""
 echo "----------------------------------------------------"
 echo " ncdu has been installed."
-echo " Version: 0.0.2"
+echo " Version: 0.0.3"
 echo "----------------------------------------------------"
 echo ""
 ]]>
